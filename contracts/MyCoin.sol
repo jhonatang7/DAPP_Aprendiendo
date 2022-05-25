@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 interface IERC20{
     function totalSupply()external view returns(uint256);
-    function balanceof(address account)external view returns(uint256);
+    function balanceOf(address account)external view returns(uint256);
     function transfer(address recipient,uint256 amount)
         external
         returns(bool);
@@ -53,7 +53,7 @@ contract MyCoin is IERC20 {
         return _totalSupply;
     }
     
-    function balanceof(address _owner)public view override returns(uint256){
+    function balanceOf(address _owner)public view override returns(uint256){
         return _balances[_owner];
     }
 

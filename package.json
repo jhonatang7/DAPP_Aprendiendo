@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "solc": "^0.8.14-fixed",
+    "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.7.3"
   },
   "devDependencies": {
